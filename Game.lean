@@ -1,5 +1,4 @@
-import Game.Levels.GroupDefinition
-import Game.Levels.Basics
+import Game.Levels.PALsessions
 
 -- Here's what we'll put on the title screen
 Title "Modern Mathematics Game"
