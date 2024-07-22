@@ -12,12 +12,42 @@ Introduction "Insert intro here
 -/
 TacticDoc «calc»
 
-/-- `ext` used for ...
+/-- `Set.ext` used for ...
 -/
 
-TacticDoc «ext»
+TacticDoc «Set.ext»
 
-NewTactic «calc» «ext»
+/-- `rw` used for ...
+-/
+
+TacticDoc «rw»
+
+/-- `intro` used for ...
+-/
+
+TacticDoc «intro»
+
+/-- `apply` used for ...
+-/
+
+TacticDoc «apply»
+
+/-- `rfl` used for ...
+-/
+
+TacticDoc «rfl»
+
+/-- `show` used for ...
+-/
+
+TacticDoc «show»
+
+
+NewTactic «calc» «Set.ext» «rw» «intro» «apply» «rfl» «show»
+
+/-- And.comm means -/
+
+TheoremDoc And.comm as "And.comm" in "PALsessions"
 
 /-- `Template` for internal use
 -/
@@ -28,6 +58,9 @@ TacticDoc Template
 TacticDoc Hole
 
 NewHiddenTactic Template Hole
+
+/-- `inter_comm` means -/
+TheoremDoc inter_comm as "inter_comm" in "PALsessions"
 
 
 variable {X : Type}
