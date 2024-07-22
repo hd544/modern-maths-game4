@@ -1,7 +1,9 @@
 import GameServer.Commands
+import Game.Metadata
+
 import Mathlib.Data.Set.Basic
 
-World "PAL sessions"
+World "PALsessions"
 Level 2
 Title "Session 2"
 
@@ -12,10 +14,7 @@ Introduction "Insert intro here
 -/
 TacticDoc «calc»
 
-/-- `Set.ext` used for ...
--/
 
-TacticDoc «Set.ext»
 
 /-- `rw` used for ...
 -/
@@ -27,15 +26,21 @@ TacticDoc «rw»
 
 TacticDoc «intro»
 
+
+
 /-- `apply` used for ...
 -/
 
 TacticDoc «apply»
 
+
+
 /-- `rfl` used for ...
 -/
 
 TacticDoc «rfl»
+
+
 
 /-- `show` used for ...
 -/
@@ -43,7 +48,7 @@ TacticDoc «rfl»
 TacticDoc «show»
 
 
-NewTactic «calc» «Set.ext» «rw» «intro» «apply» «rfl» «show»
+NewTactic «calc» «rw» «intro» «apply» «rfl» «show»
 
 /-- And.comm means -/
 
@@ -57,10 +62,35 @@ TacticDoc Template
 -/
 TacticDoc Hole
 
-NewHiddenTactic Template Hole
+/-- `sorry`
+ -/
 
-/-- `inter_comm` means -/
+TacticDoc «sorry»
+
+NewHiddenTactic Template Hole «sorry»
+
+
+
+/-- `inter_comm` means
+-/
 TheoremDoc inter_comm as "inter_comm" in "PALsessions"
+
+
+/-- `Set.ext means`
+-/
+
+DefinitionDoc Set.ext as "Set.ext"
+
+NewDefinition Set.ext
+
+
+
+/-- `[And.comm] means`
+-/
+
+TheoremDoc And.comm as "And.comm" in "PALsessions"
+
+NewTheorem And.comm 
 
 
 variable {X : Type}
@@ -75,7 +105,7 @@ Statement inter_comm (S T : Set X) : S ∩ T = T ∩ S := by
   calc
       x ∈ S ∩ T ↔ (x ∈ S) ∧ (x ∈ T) := by Hole rfl
               _ ↔ (x ∈ T) ∧ (x ∈ S) := by Hole rw [And.comm]
-              _ ↔ x ∈ T ∩ S       := by Hole rfl
+              _ ↔ x ∈ T ∩ S         := by Hole rfl
 Conclusion "
 Well done!
 "

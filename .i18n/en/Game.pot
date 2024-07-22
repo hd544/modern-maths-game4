@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon Jul 22 12:19:45 2024\n"
+"POT-Creation-Date: Mon Jul 22 16:11:39 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -20,6 +20,65 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
+#: Game.Levels.PALsessions.L01_session_1
+msgid "Session 1"
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid "Let f: ℕ → ℕ be the function f(x):= 2x\n"
+"\n"
+"\n"
+"We'll show that the function f is injective."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid "`intros`"
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid "`have`"
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid "`show`"
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid "`sorry`"
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid "`linarith` is used to prove many linear equations and inequalities"
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid "`f_injective`"
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid "Let f: ℕ → ℕ be the function f(x):=2x. Prove that f is injective."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid ".... in the text box and press \"Execute\"."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid ".... in the text box and press \"Execute\"."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid ".... in the text box and press \"Execute\"."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid ".... in the text box and press \"Execute\"."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_1
+msgid "Well done!"
+msgstr ""
+
 #: Game.Levels.PALsessions.L02_session_2
 msgid "Session 2"
 msgstr ""
@@ -30,10 +89,6 @@ msgstr ""
 
 #: Game.Levels.PALsessions.L02_session_2
 msgid "`calc` is used to write a 'calculation-style' proof"
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`Set.ext` used for ..."
 msgstr ""
 
 #: Game.Levels.PALsessions.L02_session_2
@@ -69,7 +124,19 @@ msgid "`Hole` for internal use"
 msgstr ""
 
 #: Game.Levels.PALsessions.L02_session_2
+msgid "`sorry`"
+msgstr ""
+
+#: Game.Levels.PALsessions.L02_session_2
 msgid "`inter_comm` means"
+msgstr ""
+
+#: Game.Levels.PALsessions.L02_session_2
+msgid "`Set.ext means`"
+msgstr ""
+
+#: Game.Levels.PALsessions.L02_session_2
+msgid "`[And.comm] means`"
 msgstr ""
 
 #: Game.Levels.PALsessions.L02_session_2
@@ -85,7 +152,7 @@ msgid "PAL sessions"
 msgstr ""
 
 #: Game.Levels.PALsessions
-msgid "We introduce basic lean skills through guided PAL sessions.\n"
+msgid "We introduce basic Lean skills and proofs through guided PAL sessions.\n"
 "\n"
 "Click on \"Start\" below to begin."
 msgstr ""
@@ -95,15 +162,15 @@ msgid "Modern Mathematics Game"
 msgstr ""
 
 #: Game
-msgid "This is an interactive book aimed at beginning mathematics undergraduates. You'll learn to prove\n"
-"theorems online using a computer tool called Lean.\n"
+msgid "This is an interactive tool aimed at beginning mathematics undergraduates. You'll learn to prove\n"
+"theorems online using a computer programme called Lean.\n"
 "\n"
 "Each chapter is represented by a coloured circular button in the right-hand pane. Blue indicates your\n"
 "current position, green is for completed chapters, and grey is for unread or incomplete chapters.\n"
 "\n"
 "At every stage in a proof, there is a *target*, the thing you want to prove, and a *context*, the\n"
 "set of things you have already proved or assumed at the beginning of your argument.\n"
-"The target and context change through the proof.\n"
+"The target and context change throughout the proof.\n"
 "\n"
 "The word *goal* is used to refer variously to the target or to the combination of target and context.\n"
 "\n"
