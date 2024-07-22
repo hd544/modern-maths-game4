@@ -2,7 +2,7 @@ import GameServer.Commands
 import Mathlib.Data.Set.Basic
 
 World "PAL sessions"
-Level 1
+Level 2
 Title "Session 2"
 
 Introduction "Insert intro here
