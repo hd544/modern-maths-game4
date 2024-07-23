@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Jul 23 12:48:07 2024\n"
+"POT-Creation-Date: Tue Jul 23 14:20:14 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -25,9 +25,27 @@ msgid "Session 2"
 msgstr ""
 
 #: Game.Levels.PALsessions.L01_session_2
-msgid "Insert intro here\n"
+msgid "Let `X` be a type and let `S` and `T` be sets on `X`.\n"
 "\n"
-"SORRY!!!"
+"We'll prove that `S ∩ T = T ∩ S`.\n"
+"\n"
+"To make things easier, a proof template has been provided for you.\n"
+"\n"
+"Firstly, `apply Set.ext` has been used to change the goal of proving `S ∩ T = T ∩ S` into `∀ x : X, x ∈ S ∩ T ↔ x ∈ T ∩ S` using the definition of set extensionality.\n"
+"\n"
+"Secondly, `intros x` has been used to introduce the variable `x : X`.\n"
+"\n"
+"The new goal is to `show x ∈ S ∩ T ↔ x ∈ T ∩ S`. We do so with a proof by calculation, which has already been set up using the `calc` tactic.\n"
+"\n"
+"You will need to fill in the red `sorry`s with appropriate tactics or theorems to justify each line of proof.\n"
+"\n"
+"The `sorry` tactic a really useful way to check if the existing structure of your proof is correct when you're not sure where to go next or how to justify certain lines. This tactic will be available for you in this level and future levels!\n"
+"\n"
+"The first step in the proof by calculation rewrites `x ∈ S ∩ T` using the definition of set intersection. Take a look in the right hand pane to find a tactic or theorem that is used for proving goals of the form `P ↔ Q` where `P` and `Q` are definitionally equal. Replace `sorry` with this tactic.\n"
+"\n"
+"The second step in the proof by calculation uses a theorem to justify the commutativity of and. Find this theorem in the right hand pane and replace the `sorry` with `rw [theorem]`.\n"
+"\n"
+"The final step in the proof by calculation rewrites `(x ∈ T) ∧ (x ∈ S)` using the definition of set intersection. Take a look in the right hand pane to find a tactic or theorem that is used for proving goals of the form `P ↔ Q` where `P` and `Q` are definitionally equal. Replace `sorry` with this tactic."
 msgstr ""
 
 #: Game.Levels.PALsessions.L01_session_2
@@ -35,7 +53,7 @@ msgid "The `calc` tactic is used to write a 'calculation-style' proof."
 msgstr ""
 
 #: Game.Levels.PALsessions.L01_session_2
-msgid "The `rw`tactic is used to rewrite the target or a hypothesis.\n"
+msgid "The `rw` tactic is used to rewrite the target or a hypothesis.\n"
 "\n"
 "If `h` is the name of a theorem `rw [h]` rewrites the target using `h`. For example, if `h` is\n"
 "the theroem `a = b`, then `rw [h]` causes every instance of `a` in the target to be replaced with\n"
@@ -61,11 +79,6 @@ msgid "The `show` tactic is used to state what is being proved. If, for example,
 msgstr ""
 
 #: Game.Levels.PALsessions.L01_session_2
-msgid "The `Set.ext` tactic is used when two sets are extensionally equal.\n"
-"Suppose S and T are sets on a type X. If the target is to prove S = T, then using Set.ext changes the target to ∀ x : X, x ∈ S ↔ x ∈ T."
-msgstr ""
-
-#: Game.Levels.PALsessions.L01_session_2
 msgid "The theorem `And.comm` states the commutativity of an `and` statement. For example, it does not matter whether you say `I went to see Jack and Jill` or `I went to see Jill and Jack` - the meaning is still the same."
 msgstr ""
 
@@ -86,11 +99,18 @@ msgid "The theorem `inter_comm` states the commutativity of the intersection of 
 msgstr ""
 
 #: Game.Levels.PALsessions.L01_session_2
+msgid "The definition `Set.ext` is when two sets are extensionally equal. Suppose S and T are sets on a type X.\n"
+"If the target is to prove S = T, then using `apply Set.ext` changes the target to `∀ x : X, x ∈ S ↔ x ∈ T`."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
 msgid "Let X be a type and let S and T be sets on X. Prove that S ∩ T = T ∩ S."
 msgstr ""
 
 #: Game.Levels.PALsessions.L01_session_2
-msgid "Well done!"
+msgid "Well done! You have completed the proof!\n"
+"\n"
+"Does this proof still not make sense? Ask ProofGuide to explain to you! https://chatgpt.com/g/g-sbJfmQ6te-proof-guide"
 msgstr ""
 
 #: Game.Levels.PALsessions.L02_session_4
@@ -184,7 +204,9 @@ msgid "PAL sessions"
 msgstr ""
 
 #: Game.Levels.PALsessions
-msgid "We introduce basic Lean skills and proofs through guided PAL sessions.\n"
+msgid "Lean is a fantastic resource that can help you learn how to systematically write proofs. It will double check your answers and remove any of those trivial mistakes that are so easy to make in first year!\n"
+"\n"
+"You will learn basic Lean skills and proofs through guided PAL sessions.\n"
 "\n"
 "Click on \"Start\" below to begin."
 msgstr ""
