@@ -114,7 +114,6 @@ NewTheorem And.comm
 NewDefinition Set.ext
 
 variable {X : Type}
-variable {S T : Set X}
 
 /-- Let X be a type and let S and T be sets on X. Prove that S ∩ T = T ∩ S. -/
 Statement inter_comm (S T : Set X) : S ∩ T = T ∩ S := by
