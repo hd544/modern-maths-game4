@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Mon Jul 22 16:11:39 2024\n"
+"POT-Creation-Date: Tue Jul 23 12:48:07 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -20,131 +20,163 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid "Session 1"
+#: Game.Levels.PALsessions.L01_session_2
+msgid "Session 2"
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid "Let f: ℕ → ℕ be the function f(x):= 2x\n"
+#: Game.Levels.PALsessions.L01_session_2
+msgid "Insert intro here\n"
+"\n"
+"SORRY!!!"
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "The `calc` tactic is used to write a 'calculation-style' proof."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "The `rw`tactic is used to rewrite the target or a hypothesis.\n"
+"\n"
+"If `h` is the name of a theorem `rw [h]` rewrites the target using `h`. For example, if `h` is\n"
+"the theroem `a = b`, then `rw [h]` causes every instance of `a` in the target to be replaced with\n"
+"`b`."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "The `intros` tactic is used to introduce variables of any type."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "Provided with a theorem name and any number of conditions of the theorem, the `apply` tactic is used for opening as many new goals as are necessary to fill in proofs of the remaining conditions of the theorem."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "The `rfl` tactic is used for proving goals of the form `x = y` where `x` and `y` are definitionally equal. It also proves goals of the form `P ↔ Q` if `P` and `Q` are definitionally equal."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "The `show` tactic is used to state what is being proved. If, for example, the target is to prove `x + y = x + y`, you can indicate and prove this using `show x + y = x + y := from rfl`.\n"
+"\n"
+"More generally, if the target is to prove `α`, you can close the goal using `show α := T` where `T` is a tactic proof of `α`."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "The `Set.ext` tactic is used when two sets are extensionally equal.\n"
+"Suppose S and T are sets on a type X. If the target is to prove S = T, then using Set.ext changes the target to ∀ x : X, x ∈ S ↔ x ∈ T."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "The theorem `And.comm` states the commutativity of an `and` statement. For example, it does not matter whether you say `I went to see Jack and Jill` or `I went to see Jill and Jack` - the meaning is still the same."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "`Template` for internal use"
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "`Hole` for internal use"
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "`sorry` for internal use"
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "The theorem `inter_comm` states the commutativity of the intersection of sets."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "Let X be a type and let S and T be sets on X. Prove that S ∩ T = T ∩ S."
+msgstr ""
+
+#: Game.Levels.PALsessions.L01_session_2
+msgid "Well done!"
+msgstr ""
+
+#: Game.Levels.PALsessions.L02_session_4
+msgid "Session 4"
+msgstr ""
+
+#: Game.Levels.PALsessions.L02_session_4
+msgid "Let f: ℤ → ℤ be the function f(x):= 2x\n"
 "\n"
 "\n"
 "We'll show that the function f is injective."
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid "`intros`"
+#: Game.Levels.PALsessions.L02_session_4
+msgid "The `intros` tactic is used to introduce variables of any type."
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid "`have`"
+#: Game.Levels.PALsessions.L02_session_4
+msgid "The `have` tactic is used to introduce a hypothesis into the context. For example, `have h : x + y = x + y := from rfl,` introduces the hypothesis `h : x + y = x + y` into the context. `have` requires a tactic proof of the claimed result. Here, `from rfl` is a tactic proof of `x + y = x + y`.\n"
+"\n"
+"More generally, `have h : α := T` introduces `h : α` into the context if `T` is a tactic proof of `α`."
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid "`show`"
+#: Game.Levels.PALsessions.L02_session_4
+msgid "The `show` tactic is used to state what is being proved. If, for example, the target is to prove `x + y = x + y`, you can indicate and prove this using `show x + y = x + y := from rfl`.\n"
+"\n"
+"More generally, if the target is to prove `α`, you can close the goal using `show α := T` where `T` is a tactic proof of `α`."
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid "`sorry`"
+#: Game.Levels.PALsessions.L02_session_4
+msgid "The `linarith` tactic is used to prove many linear equations and inequalities."
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid "`linarith` is used to prove many linear equations and inequalities"
+#: Game.Levels.PALsessions.L02_session_4
+msgid "`sorry` for internal use"
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid "`f_injective`"
+#: Game.Levels.PALsessions.L02_session_4
+msgid "`f_injective` is the theorem that the function `f` is injective. In other words, `∀ (x₁ x₂ : ℤ), f(x₁) = f(x₂) → x₁ = x₂`."
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid "Let f: ℕ → ℕ be the function f(x):=2x. Prove that f is injective."
+#: Game.Levels.PALsessions.L02_session_4
+msgid "Let f: ℤ → ℤ be the function f(x):=2x. Prove that f is injective."
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid ".... in the text box and press \"Execute\"."
+#: Game.Levels.PALsessions.L02_session_4
+msgid "To prove f is injective we must show `∀ x₁ x₂ : ℤ, f x₁ = f x₂ → x₁ = x₂`.\n"
+"The first step in our English language proof would be to `assume x₁ x₂ : ℤ`. The Lean equivalent of `assume` is the tactic `intros` which introduces variables of any type."
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid ".... in the text box and press \"Execute\"."
+#: Game.Levels.PALsessions.L02_session_4
+msgid "Type `intros x₁ x₂` in the text box and press \"Execute\".\n"
+"\n"
+"₁ and ₂ are typed backslash 1 and backlash 2"
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid ".... in the text box and press \"Execute\"."
+#: Game.Levels.PALsessions.L02_session_4
+msgid "Our goal has now changed to prove `f x₁ = f x₂ → x₁ = x₂`. The next step in our English language proof would be to assume a hypothesis, h. Taking inspiration from above, type the correct tactic and variable into the text box and press \"Execute\"."
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid ".... in the text box and press \"Execute\"."
+#: Game.Levels.PALsessions.L02_session_4
+msgid "Type `intros h` in the text box and press \"Execute\"."
 msgstr ""
 
-#: Game.Levels.PALsessions.L01_session_1
-msgid "Well done!"
+#: Game.Levels.PALsessions.L02_session_4
+msgid "We now have an assumption `h: f x₁ = f x₂` and a new goal to prove `x₁ = x₂`. The next step in our English language proof would be to rewrite our hypothesis using the definition of our function. In Lean we use the `have` tactic to do so."
 msgstr ""
 
-#: Game.Levels.PALsessions.L02_session_2
-msgid "Session 2"
+#: Game.Levels.PALsessions.L02_session_4
+msgid "Type `have h₁ : sorry := h` in the text box, filling in `sorry` with the definition of the function and press \"Execute\".\n"
+"\n"
+"Use * instead of x for multiplication in Lean."
 msgstr ""
 
-#: Game.Levels.PALsessions.L02_session_2
-msgid "Insert intro here"
+#: Game.Levels.PALsessions.L02_session_4
+msgid "Type `have h₁ : 2 * x₁ = 2 * x₂ := h` in the text box and press \"Execute\"."
 msgstr ""
 
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`calc` is used to write a 'calculation-style' proof"
+#: Game.Levels.PALsessions.L02_session_4
+msgid "Our goal of x₁ = x₂ now follows by arithmetic. Explore the definitions of tactics by clicking on the boxes in the right hand pane. Select the tactic that will prove our result by arithmetic, type it in the text box and press \"Execute\"."
 msgstr ""
 
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`rw` used for ..."
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`intro` used for ..."
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`apply` used for ..."
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`rfl` used for ..."
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`show` used for ..."
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "And.comm means"
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`Template` for internal use"
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`Hole` for internal use"
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`sorry`"
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`inter_comm` means"
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`Set.ext means`"
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "`[And.comm] means`"
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "Let X be a type and let S and T be sets on X. Prove that S ∩ T = T ∩ S."
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_2
-msgid "Well done!"
+#: Game.Levels.PALsessions.L02_session_4
+msgid "Well done! You have completed the proof!\n"
+"\n"
+"Does this proof still not make sense? Ask ProofGuide to explain to you! https://chatgpt.com/g/g-sbJfmQ6te-proof-guide"
 msgstr ""
 
 #: Game.Levels.PALsessions
