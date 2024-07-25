@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Tue Jul 23 15:57:53 2024\n"
+"POT-Creation-Date: Thu Jul 25 15:33:11 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -183,10 +183,6 @@ msgstr ""
 msgid "Type `have h₁ : sorry := h` in the text box, filling in `sorry` with the definition of the function and press \"Execute\".\n"
 "\n"
 "Use * instead of x for multiplication in Lean."
-msgstr ""
-
-#: Game.Levels.PALsessions.L02_session_4
-msgid "Type `have h₁ : 2 * x₁ = 2 * x₂ := h` in the text box and press \"Execute\"."
 msgstr ""
 
 #: Game.Levels.PALsessions.L02_session_4

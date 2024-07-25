@@ -17,7 +17,7 @@ We'll show that the function f is injective.
 "
 
 
-/-- The `intros` tactic is used to introduce variables of any type. 
+/-- The `intros` tactic is used to introduce variables of any type.
 -/
 
 TacticDoc intros
@@ -61,6 +61,7 @@ NewHiddenTactic «sorry»
 
 TheoremDoc f_injective as "f_injective" in "PALsessions"
 
+
 open Function
 def f (x : Int) : Int := (2 : Int) * x
 
@@ -80,11 +81,10 @@ Statement f_injective : Injective f := by
   Hint " Type `have h₁ : sorry := h` in the text box, filling in `sorry` with the definition of the function and press \"Execute\".
 
   Use * instead of x for multiplication in Lean."
-  Hint (hidden := true) " Type `have h₁ : 2 * x₁ = 2 * x₂ := h` in the text box and press \"Execute\"."
   have h₁ : 2 * x₁ = 2 * x₂ := h
+
   Hint "Our goal of x₁ = x₂ now follows by arithmetic. Explore the definitions of tactics by clicking on the boxes in the right hand pane. Select the tactic that will prove our result by arithmetic, type it in the text box and press \"Execute\"."
   linarith
-
 Conclusion "
 Well done! You have completed the proof!
 
